@@ -1,0 +1,124 @@
+.taskWindown {
+    padding: 0 0.75rem 0.75rem;
+}
+
+.newTaskBar {
+    display: flex;
+    align-items: center;
+    max-width: 46rem;
+    margin: auto;
+    margin-top: -1.6875rem;
+}
+
+.textArea {
+    height: 3.375rem;
+    resize: none;
+    width: 39.875rem;
+    background: var(--gray-500);
+    padding: 1rem 1rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--gray-700);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--gray-100);
+    cursor: pointer;
+}
+
+.newTaskBar > button {
+    height: 3.25rem;
+    width: 5.625rem;
+    background: var(--blueDark);
+    border-radius: 8px;
+    color: var(--gray-100);
+    font-weight: bold;
+    margin-left: 8px;
+    border: none;
+    padding: 1rem 1rem 1rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+    transition: background-color 0.1s;
+    cursor: pointer;
+}
+
+.textArea:focus {
+    box-shadow: 0 0 0 2px var(--purpleDark);
+}
+
+.iconePlus {
+    width: 1rem;
+    height: 1rem;
+    margin-left: auto;
+}
+
+.newTaskBar > button:not(:disabled):hover {
+    background: var(--blue);
+}
+
+.newTaskBar > button:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+.progressCreatedForm {
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 46rem;
+}
+
+.progressCreatedTask {
+    font-size: .875rem;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.progressCreatedTaskNumber {
+    font-size: .75rem;
+    margin-left: 0.5rem;
+    color: var(--gray-200);
+    background: var(--gray-400);
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.59375rem;
+
+}
+
+.progressCompletedTask {
+    font-size: .875rem;
+    font-weight: bold;
+    color: var(--purple);
+}
+
+.progressCompletedTaskNumber {
+    font-size: .75rem;
+    margin-left: 0.5rem;
+    color: var(--gray-200);
+    background: var(--gray-400);
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.59375rem;
+}
+
+.emptyTasksArticle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 46rem;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+    border-top: 1px solid var(--gray-400);
+    padding: 0 .625rem 0 .625rem;
+
+}
+
+.emptyTasksIcon {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: var(--gray-600);
+    margin: 4rem 0 1rem;
+    color: var(--gray-400);
+}
