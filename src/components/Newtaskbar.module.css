@@ -44,7 +44,7 @@
     cursor: pointer;
 }
 
-.textArea:focus {
+.textArea .newTaskBar > button:focus {
     box-shadow: 0 0 0 2px var(--purpleDark);
 }
 
